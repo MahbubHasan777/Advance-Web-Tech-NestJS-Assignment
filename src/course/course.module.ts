@@ -6,6 +6,7 @@ import { MulterModule } from '@nestjs/platform-express';
 @Module({
   imports: [MulterModule.register()],
   controllers: [CourseController],
-  providers: [CourseService]
+  providers: [CourseService],
+  exports: [CourseService]
 })
 export class CourseModule {}
